@@ -74,26 +74,25 @@ An analysis of the data in the train.csv dataset is presented. The bar plots sho
   <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/comp_zipcode.png">
 </p>
 
-
-
-
-
-
-
-
-
+Some of the features display higher variance and that means some influence the compliance attribute more than others. This analysis is confirmed by performing a Principal Component Analysis. First, the data is passed through the method fit of the PCA class and the cumulative explained variance ratio is plotted:
 
 <p align="center">
   <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/expvariancecum.png">
 </p>
 
+The plot shows that a reduced number of features is enough to explain all the variance in the data. This can be seen in more detail by plotting the variance for each feature in the dataset. In the next plot, it is concluded that one feature is a much bigger contributor than all the others:
+
 <p align="center">
   <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/expvarianceperfeature0.png">
 </p>
 
+Eliminating this feature from the plots gives a better understanding of the variance of the next contributor features:
+
 <p align="center">
   <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/ 	expvarianceperfeature1.png">
 </p>
+
+Eliminating more features from the plot allows to better evaluate the influence of the next top three variance contributor features:
 
 <p align="center">
   <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/ 	expvarianceperfeature2.png">
@@ -109,10 +108,7 @@ An analysis of the data in the train.csv dataset is presented. The bar plots sho
 
 
 
-
-
-
-Data fields
+##Description of the data fields in the dataset
 
 train.csv & test.csv
 
