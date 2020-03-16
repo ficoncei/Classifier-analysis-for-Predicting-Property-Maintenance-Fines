@@ -6,7 +6,29 @@ The code presented in this repository analyses the available datasets and create
 
 The data available in the datasets has been provided through the Detroit Open Data Portal.
 
-Two data files are used in training and validating the models: train.csv and test.csv. Each row in these two files corresponds to a single blight ticket, and includes information about when, why, and to whom each ticket was issued. The target variable is compliance, which is True if the ticket was paid early, on time, or within one month of the hearing data, False if the ticket was paid after the hearing date or not at all, and Null if the violator was found not responsible.
+Two data files are used in training and validating the models: train.csv and test.csv. Each row in these two files corresponds to a single blight ticket, and includes information about when, why, and to whom each ticket was issued. The target variable is compliance, which is True if the ticket was paid early, on time, or within one month of the hearing data, False if the ticket was paid after the hearing date or not at all, and Null if the violator was found not responsible. A thorough description of the fields in the dataset can be found at the bottom of this readme file.
+
+
+
+
+
+
+
+
+
+<p align="center">
+  <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/meanAUC.png">
+</p>
+
+
+
+
+
+
+
+
+
+
 
 Data fields
 
