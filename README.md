@@ -43,7 +43,7 @@ An analysis of the data in the train.csv dataset is presented. The bar plots sho
 </p>
 
 <p align="center">
-  <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/ 	comp_hearingtimediff.png">
+  <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/comp_hearingtimediff.png">
 </p>
 
 <p align="center">
