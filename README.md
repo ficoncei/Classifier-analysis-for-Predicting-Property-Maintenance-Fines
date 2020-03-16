@@ -89,26 +89,26 @@ The plot shows that a reduced number of features is enough to explain all the va
 Eliminating this feature from the plots gives a better understanding of the variance of the next contributor features:
 
 <p align="center">
-  <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/ 	expvarianceperfeature1.png">
+  <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/expvarianceperfeature1.png">
 </p>
 
 Eliminating more features from the plot allows to better evaluate the influence of the next top three variance contributor features:
 
 <p align="center">
-  <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/ 	expvarianceperfeature2.png">
+  <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/expvarianceperfeature2.png">
 </p>
 
 <p align="center">
-  <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/ 	expvarianceperfeature3.png">
+  <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/expvarianceperfeature3.png">
 </p>
 
 <p align="center">
-  <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/ 	expvarianceperfeature4.png">
+  <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/expvarianceperfeature4.png">
 </p>
 
 
 
-##Description of the data fields in the dataset
+## Description of the data fields in the dataset
 
 train.csv & test.csv
 
