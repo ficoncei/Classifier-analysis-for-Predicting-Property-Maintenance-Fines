@@ -9,6 +9,73 @@ The data available in the datasets has been provided through the Detroit Open Da
 Two data files are used in training and validating the models: train.csv and test.csv. Each row in these two files corresponds to a single blight ticket, and includes information about when, why, and to whom each ticket was issued. The target variable is compliance, which is True if the ticket was paid early, on time, or within one month of the hearing data, False if the ticket was paid after the hearing date or not at all, and Null if the violator was found not responsible. A thorough description of the fields in the dataset can be found at the bottom of this readme file.
 
 
+##Comparing classifiers
+The classifiers built with the available data in the train.csv dataset are 'Naive Bayes','Gradient boosting','Random Forest' and 'Tuned Random Forest'. The latter, 'Tuned Random Forest', is obtained after running a Randomised Search for two parameters, 'n_estimators' and 'max_depth'. The search has been limited to two parameters and to a very small subset of possible values due to the computational effort required. Comparison between the classifiers is displayed here:
+
+<p align="center">
+  <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/meanAUC.png">
+</p>
+
+An analysis of the data in the train.csv dataset is presented. The bar plots show the influence of each feature on the compliance attribute:
+
+<p align="center">
+  <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/comp_adminfee.png">
+</p>
+
+<p align="center">
+  <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/comp_agencyname.png">
+</p>
+
+<p align="center">
+  <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/comp_cleanupcost.png">
+</p>
+
+<p align="center">
+  <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/comp_discount.png">
+</p>
+
+<p align="center">
+  <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/comp_disposition.png">
+</p>
+
+<p align="center">
+  <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/comp_fineamount.png">
+</p>
+
+<p align="center">
+  <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/ 	comp_hearingtimediff.png">
+</p>
+
+<p align="center">
+  <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/comp_inspectorname.png">
+</p>
+
+<p align="center">
+  <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/comp_judjmentamount.png">
+</p>
+
+<p align="center">
+  <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/comp_latefee.png">
+</p>
+
+<p align="center">
+  <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/ 	comp_statefee.png">
+</p>
+
+<p align="center">
+  <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/comp_violationcode.png">
+</p>
+
+<p align="center">
+  <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/comp_violatorname.png">
+</p>
+
+<p align="center">
+  <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/comp_zipcode.png">
+</p>
+
+
+
 
 
 
@@ -17,13 +84,28 @@ Two data files are used in training and validating the models: train.csv and tes
 
 
 <p align="center">
-  <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/meanAUC.png">
+  <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/expvariancecum.png">
 </p>
 
+<p align="center">
+  <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/expvarianceperfeature0.png">
+</p>
 
+<p align="center">
+  <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/ 	expvarianceperfeature1.png">
+</p>
 
+<p align="center">
+  <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/ 	expvarianceperfeature2.png">
+</p>
 
+<p align="center">
+  <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/ 	expvarianceperfeature3.png">
+</p>
 
+<p align="center">
+  <img src="https://github.com/ficoncei/Classifier-analysis-for-Predicting-Property-Maintenance-Fines/blob/master/files/ 	expvarianceperfeature4.png">
+</p>
 
 
 
