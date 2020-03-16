@@ -9,7 +9,7 @@ The data available in the datasets has been provided through the Detroit Open Da
 Two data files are used in training and validating the models: train.csv and test.csv. Each row in these two files corresponds to a single blight ticket, and includes information about when, why, and to whom each ticket was issued. The target variable is compliance, which is True if the ticket was paid early, on time, or within one month of the hearing data, False if the ticket was paid after the hearing date or not at all, and Null if the violator was found not responsible. A thorough description of the fields in the dataset can be found at the bottom of this readme file.
 
 
-##Comparing classifiers
+## Comparing classifiers
 The classifiers built with the available data in the train.csv dataset are 'Naive Bayes','Gradient boosting','Random Forest' and 'Tuned Random Forest'. The latter, 'Tuned Random Forest', is obtained after running a Randomised Search for two parameters, 'n_estimators' and 'max_depth'. The search has been limited to two parameters and to a very small subset of possible values due to the computational effort required. Comparison between the classifiers is displayed here:
 
 <p align="center">
